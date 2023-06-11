@@ -1,0 +1,18 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/image/istockphoto-620368864-612x612.jpg" alt="">
+    </div>
+    <div class="currency">
+      <div class="box">
+        <mat-icon>attach_money</mat-icon>
+        <span class="cur">{{usd | async | number}}</span>
+      </div>
+      <div class="box">
+        <mat-icon >euro_symbol</mat-icon>
+        <span class="cur">{{eur | async | number:'1.2-2'}}</span>
+      </div>
+
+    </div>
+  </div>
+</header>

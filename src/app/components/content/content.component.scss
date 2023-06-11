@@ -1,0 +1,38 @@
+.main{
+  width: 100%;
+
+
+  .container  {
+    max-width: 800px;
+    margin: 5rem auto;
+    //background: gray;
+    padding: 1rem;
+    box-shadow: 0 10px 20px 0 #b3bbc673;
+
+    .content{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+
+      .box{
+        display: flex;
+        flex-direction: column;
+
+        .options{
+
+        }
+
+
+      }
+      .arrows{
+        color: green;
+      }
+    }
+  }
+}
+
+.flag{
+  width:30px;
+  vertical-align: middle;
+}
