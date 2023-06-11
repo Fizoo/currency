@@ -4,7 +4,7 @@ import {Directive, ElementRef, Input} from '@angular/core';
   selector: '[appFlag]'
 })
 export class FlagDirective {
-  @Input('appFlag') currency:string
+  @Input('appFlag') currency:string=''
 
   constructor(private el:ElementRef) { }
 
@@ -15,7 +15,7 @@ export class FlagDirective {
     let imagePath=''
     switch (this.currency ) {
       case 'USD':
-        imagePath='assets/image/usa.avif'
+        imagePath='assets/image/usa.png'
         break
       case 'EUR':
         imagePath='assets/image/eur.png'
