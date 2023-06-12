@@ -1,29 +1,26 @@
-.header{
+.header {
   width: 100%;
-  //background: gray;
-  .container{
+  .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 50px;
     padding: .5rem;
     box-shadow: 0 5px 10px 0 #b3bbc673;
 
-    .logo{
-      flex: 1;
+    .logo {
       margin-left: 1rem;
 
-      img{
+      img {
         width: 40px;
         height: 40px;
         object-fit: contain;
       }
-
     }
 
-    .currency{
+    .currency {
       display: flex;
       gap: 2rem;
-      flex: 3;
 
       .box {
         display: flex;
@@ -31,11 +28,10 @@
         padding: 2px;
         margin-right: 2rem;
 
-        .cur{
-         // color: green;
+        .cur {
+          // color: green;
         }
       }
-
     }
   }
 }

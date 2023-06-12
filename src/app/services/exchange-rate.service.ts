@@ -30,7 +30,7 @@ export class ExchangeRateService {
         for (const [currency, rate] of Object.entries(rates)) {
           if (allowedCurrencies.includes(currency)) {
             exchangeRates.push({ currency, rate } as ExchangeRate);
-            this.updateExchangeRate(currency, rate);
+            this.updateExchangeRateToUAH(currency, rate);
           }
         }
         return exchangeRates;
@@ -42,7 +42,7 @@ export class ExchangeRateService {
     )
   }
 
-  private updateExchangeRate(currency: string, rate: number) {
+  private updateExchangeRateToUAH(currency: string, rate: number) {
     if (currency === 'USD') {
       this.usdValue$.next(1 / rate);
     }

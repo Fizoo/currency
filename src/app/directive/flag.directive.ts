@@ -12,7 +12,8 @@ export class FlagDirective {
     this.setFlagImage();
   }
   private setFlagImage() {
-    let imagePath=''
+    let imagePath:string
+
     switch (this.currency ) {
       case 'USD':
         imagePath='assets/image/usa.png'
@@ -29,6 +30,4 @@ export class FlagDirective {
     }
     this.el.nativeElement.src = imagePath;
   }
-
-
 }

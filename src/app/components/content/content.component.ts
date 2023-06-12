@@ -17,14 +17,13 @@ export class ContentComponent implements OnInit, OnDestroy {
   currencyTo = new FormControl()
 
   currencyList: ExchangeRate[] = []
+
   private unsubscribe$ = new Subject<void>();
 
   constructor(private exchangeService: ExchangeRateService) {
   }
 
   ngOnInit(): void {
-
-
     this.amountFrom.valueChanges.pipe(
       debounceTime(300),
       takeUntil(this.unsubscribe$))
@@ -92,9 +91,7 @@ export class ContentComponent implements OnInit, OnDestroy {
     const currencyTo = this.currencyTo.value
     this.currencyFrom.setValue(currencyTo)
     this.currencyTo.setValue(currencyFrom)
-
   }
-
 
   ngOnDestroy(): void {
     this.unsubscribe$.next();

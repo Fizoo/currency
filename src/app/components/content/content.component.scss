@@ -1,43 +1,36 @@
-.main{
+.main {
   width: 100%;
-  .head{
+
+  .head {
     text-align: center;
     margin: 1rem;
   }
 
-
-  .container  {
+  .container {
     max-width: 800px;
     margin: 0 auto;
-    //background: gray;
     padding: 1rem;
     box-shadow: 0 10px 20px 0 #b3bbc673;
 
-    .content{
+    .content {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       padding: 1rem;
 
-
-      .box{
+      .box {
         display: flex;
         flex-direction: column;
-
-        .options{
-
-        }
-
-
       }
-      .arrows{
+
+      .arrows {
         color: green;
       }
     }
   }
 }
 
-.flag{
-  width:30px;
+.flag {
+  width: 30px;
   vertical-align: middle;
 }
